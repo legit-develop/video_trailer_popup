@@ -55,6 +55,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* adding and removing class */
+  opacity: 1;
+  transition: opacity 0.7s;
 }
 
 .trailer-container video {
@@ -77,6 +80,7 @@ body {
   cursor: pointer;
 }
 
-.active {
+.active.trailer-container {
   visibility: hidden;
+  opacity: 0;
 }
